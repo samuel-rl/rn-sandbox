@@ -11,4 +11,9 @@ export const routes: IRoute[] = [
     name: 'ChanelScroll',
     title: 'ScrollView Chanel',
   },
+  {
+    index: 2,
+    name: 'SvgAnimation',
+    title: 'Svg Animation',
+  },
 ]

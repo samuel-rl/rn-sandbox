@@ -6,7 +6,9 @@ import Animated, {
   useAnimatedScrollHandler,
   useSharedValue,
   scrollTo,
-  useDerivedValue
+  useDerivedValue,
+  withTiming,
+  Easing
 } from 'react-native-reanimated';
 import PictureElement from './Item';
 import { items, MAX_HEIGHT } from './constants';
@@ -27,7 +29,11 @@ const ChanelScrollScreen = () => {
       Alert.alert("Open : " + items[index].title);
       return;
     }
-    clickedItem.value = index;
+
+    clickedItem.value = withTiming(index * MAX_HEIGHT, {
+      duration: 400,
+      easing: Easing.inOut(Easing.ease),
+    });
   };
 
   useDerivedValue(() => {
