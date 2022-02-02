@@ -1,7 +1,12 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Platform } from 'react-native';
-import { HomeScreen, ChanelScrollScreen, SvgAnimation } from './screens';
+import {
+  HomeScreen,
+  ChanelScrollScreen,
+  SvgAnimation, 
+  ListImageAnimatedParallax
+} from './screens';
 
 const Stack = createNativeStackNavigator();
 
@@ -36,6 +41,11 @@ export default function App() {
         <Stack.Screen
           name={'SvgAnimation'}
           component={SvgAnimation}
+          options={screenOptions}
+        />
+        <Stack.Screen
+          name={'imageParallax'}
+          component={ListImageAnimatedParallax}
           options={screenOptions}
         />
       </Stack.Navigator>
