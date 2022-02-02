@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 import Animated, { Easing, useAnimatedProps, useSharedValue, withTiming } from 'react-native-reanimated';
 import { Gesture, GestureDetector, gestureHandlerRootHOC } from 'react-native-gesture-handler';
@@ -187,6 +187,7 @@ const SvgAnimation = gestureHandlerRootHOC(() => {
             strokeDasharray={length5}
           />
         </Svg>
+        <Text style={styles.text}>Press the fingerprint</Text>
       </View>
     </GestureDetector>
   );
@@ -198,4 +199,10 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
+  text: {
+    position: 'absolute',
+    alignSelf: 'center',
+    bottom: 100,
+    fontSize: 20
+  }
 });
