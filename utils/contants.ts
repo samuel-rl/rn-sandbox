@@ -16,4 +16,9 @@ export const routes: IRoute[] = [
     name: 'SvgAnimation',
     title: 'Svg Animation',
   },
+  {
+    index: 3,
+    name: 'imageParallax',
+    title: 'Images List Parallax Animation',
+  },
 ]
