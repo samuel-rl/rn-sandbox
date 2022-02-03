@@ -5,7 +5,8 @@ import {
   HomeScreen,
   ChanelScrollScreen,
   SvgAnimation, 
-  ListImageAnimatedParallax
+  ListImageAnimatedParallax,
+  ImageComparison,
 } from './screens';
 
 const Stack = createNativeStackNavigator();
@@ -46,6 +47,11 @@ export default function App() {
         <Stack.Screen
           name={'imageParallax'}
           component={ListImageAnimatedParallax}
+          options={screenOptions}
+        />
+        <Stack.Screen
+          name={'ImageComparison'}
+          component={ImageComparison}
           options={screenOptions}
         />
       </Stack.Navigator>
