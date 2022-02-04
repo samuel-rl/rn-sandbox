@@ -30,10 +30,7 @@ const ChanelScrollScreen = () => {
       return;
     }
 
-    clickedItem.value = withTiming(index * MAX_HEIGHT, {
-      duration: 400,
-      easing: Easing.inOut(Easing.ease),
-    });
+    clickedItem.value = index
   };
 
   useDerivedValue(() => {
