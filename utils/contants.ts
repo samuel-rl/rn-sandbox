@@ -21,9 +21,14 @@ export const routes: IRoute[] = [
     name: 'imageParallax',
     title: 'Images List Parallax Animation',
   },
-{
+  {
     index: 4,
     name: 'ImageComparison',
     title: 'Image comparator',
+  },
+  {
+    index: 5,
+    name: 'LayoutAnimation',
+    title: 'Layout Animation',
   },
 ]
