@@ -31,4 +31,9 @@ export const routes: IRoute[] = [
     name: 'LayoutAnimation',
     title: 'Layout Animation',
   },
+  {
+    index: 6,
+    name: 'VerticalList',
+    title: 'Vertical List',
+  },
 ]

@@ -4,6 +4,7 @@ import SvgAnimation from "./SvgAnimation/SvgAnimation";
 import ListImageAnimatedParallax from "./ListImageAnimatedParallax/ListImageAnimatedParallax";
 import ImageComparison from "./ImageComparison/ImageComparison";
 import LayoutAnimation from "./LayoutAnimation/LayoutAnimation";
+import VerticalList from "./VerticalList/VerticalList";
 
 export {
   HomeScreen,
@@ -11,5 +12,6 @@ export {
   SvgAnimation,
   ListImageAnimatedParallax,
   ImageComparison,
-  LayoutAnimation
+  LayoutAnimation,
+  VerticalList,
 };

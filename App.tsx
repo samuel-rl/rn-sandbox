@@ -7,7 +7,8 @@ import {
   SvgAnimation, 
   ListImageAnimatedParallax,
   ImageComparison,
-  LayoutAnimation
+  LayoutAnimation,
+  VerticalList
 } from './screens';
 
 const Stack = createNativeStackNavigator();
@@ -58,6 +59,11 @@ export default function App() {
         <Stack.Screen
           name={'LayoutAnimation'}
           component={LayoutAnimation}
+          options={screenOptions}
+        />
+        <Stack.Screen
+          name={'VerticalList'}
+          component={VerticalList}
           options={screenOptions}
         />
       </Stack.Navigator>
