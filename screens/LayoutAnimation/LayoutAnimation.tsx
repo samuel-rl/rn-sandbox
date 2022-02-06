@@ -76,9 +76,9 @@ const ProjectCard = ({project, index}: any) => {
   return (
     <Animated.View 
       style={[styles.projectContainer, { backgroundColor: project.color}]}
-      entering={FadeIn.delay(index * 150)}
+      entering={FadeIn.delay(150)}
       exiting={FadeOut.delay(150)}
-      layout={Layout.randomDelay()}
+      layout={Layout.springify()}
       >
       <Text>{project.name}</Text>
     </Animated.View>
